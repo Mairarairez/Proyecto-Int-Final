@@ -1,0 +1,21 @@
+*{
+   
+    color: black;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size:larger;
+    box-sizing: border-box;
+
+}
+a:hover{
+    background: rgb(194, 194, 194);
+
+ color: black;
+    transition: 0.7s;
+    box-shadow: 10px 10px 30px rgba(65, 65, 65, 0.63);
+
+}
+@media(max-width: 768px){
+   ul{
+    display: none;
+ }
+}

@@ -1,0 +1,27 @@
+
+
+[
+{
+    "nombre": "Cristiano",
+    "apellido": "Ronaldo",
+    "edad": 35,
+    "equipos": ["mastecher", "barcelona", "Real madrid"]
+}
+
+{
+    "nombre": "Lionel",
+    "apellido": "Messi",
+    "edad": 34,
+    "equipos": ["river", 
+                "boca",
+                 "psg"]
+}
+{
+    "nombre": "Zlatan",
+    "apellido": "Ibra",
+    "edad": 40,
+    "equipos": ["alemania", 
+                "china",
+                 "lanus"]
+}
+]
