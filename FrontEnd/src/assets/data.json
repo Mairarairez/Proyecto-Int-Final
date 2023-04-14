@@ -6,8 +6,7 @@
     "apellido": "Ronaldo",
     "edad": 35,
     "equipos": ["mastecher", "barcelona", "Real madrid"]
-}
-
+},
 {
     "nombre": "Lionel",
     "apellido": "Messi",
@@ -15,7 +14,7 @@
     "equipos": ["river", 
                 "boca",
                  "psg"]
-}
+},
 {
     "nombre": "Zlatan",
     "apellido": "Ibra",
