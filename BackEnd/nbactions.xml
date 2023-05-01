@@ -12,7 +12,7 @@
             <properties>
                 <exec.vmArgs>-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8000</exec.vmArgs>
                 <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
-                <exec.appArgs>-Xdebug" en la sección de "VM Options</exec.appArgs>
+                <exec.appArgs>spring-boot:run -Ddebug</exec.appArgs>
                 <exec.mainClass>${packageClassName}</exec.mainClass>
                 <exec.executable>java</exec.executable>
                 <exec.workingdir>/home/sysworld/Escritorio/ProyectoIntFinal/BackEnd</exec.workingdir>
@@ -30,7 +30,7 @@
             <properties>
                 <exec.vmArgs>-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8000 -agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address}</exec.vmArgs>
                 <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
-                <exec.appArgs>-Xdebug" en la sección de "VM Options</exec.appArgs>
+                <exec.appArgs>spring-boot:run -Ddebug</exec.appArgs>
                 <exec.mainClass>${packageClassName}</exec.mainClass>
                 <exec.executable>java</exec.executable>
                 <jpda.listen>true</jpda.listen>
@@ -52,7 +52,7 @@
                 <exec.mainClass>${packageClassName}</exec.mainClass>
                 <exec.executable>java</exec.executable>
                 <exec.workingdir>/home/sysworld/Escritorio/ProyectoIntFinal/BackEnd</exec.workingdir>
-                <exec.appArgs>-Xdebug" en la sección de "VM Options</exec.appArgs>
+                <exec.appArgs>spring-boot:run -Ddebug</exec.appArgs>
             </properties>
         </action>
     </actions>

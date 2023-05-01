@@ -7,6 +7,10 @@
           </a>
         </div>
     </div>
+    <div >
+      <p id="nombre">{{persona.nombre}} {{persona.apellido}} </p>
+      <p>Full Stack Developer</p>
+    </div>
 
     <div >
       <div>
@@ -14,14 +18,14 @@
         <div class="botones">
           <div  class="btn-edit acercade" >
 
-            <button id="edit_acercade" (click)="abrirModal($event)">
+            <button id="edit_acercade">
               <i class="bi bi-pencil-square" ></i>
             </button>
             
 
             <div style="display: none;" id="modal_edit_acercade">
               <input id="input_acercade" type="text">
-              <button id="acercade" class="btn-right" (click)="cambiarParrafo($event)" >
+              <button id="acercade" class="btn-right"  >
                 <i class="bi bi-check-square"></i>
               </button>
             </div>

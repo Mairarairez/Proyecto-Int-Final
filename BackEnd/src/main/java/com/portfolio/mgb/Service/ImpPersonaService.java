@@ -1,4 +1,3 @@
-
 package com.portfolio.mgb.Service;
 
 import com.portfolio.mgb.Entity.Persona;
@@ -32,12 +31,23 @@ public class ImpPersonaService implements IPersonaService{
     @Override
     public Persona findPersona(Long id) {
     Persona persona = ipersonaRepository.findById(id).orElse(null);
-        return persona;    }
+        return persona;    
+    }
 
-    @Override
-    public Persona finaPersona(Long id) {
+    public List<Persona> list() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-    
 
-}
+    public boolean existsById(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public Object getOne(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public void save(Persona persona) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    }
