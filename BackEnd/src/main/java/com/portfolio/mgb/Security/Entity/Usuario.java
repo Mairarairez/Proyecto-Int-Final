@@ -1,3 +1,4 @@
+
 package com.portfolio.mgb.Security.Entity;
 
 import java.io.Serializable;
@@ -14,10 +15,7 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotNull;
 
-/**
- *
- * @author sysworld
- */
+
 @Entity
 public class Usuario implements Serializable {
     @Id

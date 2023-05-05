@@ -16,9 +16,11 @@ import { DeslizarComponent } from './components/deslizar/deslizar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import {HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { interceptorProvider } from './service/interceptor-service';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
 ;
 
 
@@ -36,6 +38,8 @@ import { interceptorProvider } from './service/interceptor-service';
     FooterComponent,
     HomeComponent,
     LoginComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
      ],
   imports: [
     FormsModule,
@@ -44,6 +48,7 @@ import { interceptorProvider } from './service/interceptor-service';
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
+    ReactiveFormsModule
     ],
   providers: [
     interceptorProvider

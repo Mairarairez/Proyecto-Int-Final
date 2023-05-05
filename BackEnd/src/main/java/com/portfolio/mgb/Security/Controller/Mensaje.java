@@ -1,10 +1,5 @@
 
 package com.portfolio.mgb.Security.Controller;
-
-/**
- *
- * @author Usuario
- */
 public class Mensaje {
     private String mensaje;
     

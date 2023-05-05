@@ -1,22 +1,18 @@
-
 package com.portfolio.mgb.Interface;
 
 import com.portfolio.mgb.Entity.Persona;
 import java.util.List;
 
-
 public interface IPersonaService {
     //Traer una lista de personas
-    public List<Persona> getPersona(); 
+    public List<Persona> getPersona();
     
-    //Guardar un objeto de tipo persona
-    public void savePersona (Persona persona);
+    //Guardar un objeto de tipo Persona
+    public void savePersona(Persona persona);
     
-    //Eliminar un usuario por Id
-    public void deletePersona (Long id);
+    //Eliminar un objeto pero lo buscamos por ID
+    public void deletePersona(Integer id);
     
-    //Buscar una persona por Id 
-    public Persona findPersona (Long id);
-    
-    
+    //Buscar una persona por ID
+    public Persona findPersona(Integer id);
 }
