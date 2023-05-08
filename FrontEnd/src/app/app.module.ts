@@ -7,7 +7,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
-import { EducacionComponent } from './components/educacion/educacion.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HysComponent } from './components/hys/hys.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
@@ -20,8 +19,9 @@ import { LoginComponent } from './components/login/login.component';
 import { interceptorProvider } from './service/interceptor-service';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
+import { EducacionComponent } from './components/educacion/educacion.component';
+import { EditeducacionComponent } from './components/educacion/editeducacion/editeducacion.component';
 import { NeweducacionComponent } from './components/educacion/neweducacion/neweducacion.component';
-import { EditEducacionComponent } from './components/educacion/edit-educacion/edit-educacion.component';
 ;
 
 
@@ -32,7 +32,6 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion/ed
     BannerComponent,
     AcercaDeComponent,
     ExperienciaComponent,
-    EducacionComponent,
     HysComponent,
     ProyectoComponent,
     DeslizarComponent,
@@ -41,8 +40,9 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion/ed
     LoginComponent,
     NewExperienciaComponent,
     EditExperienciaComponent,
+    EducacionComponent,
+    EditeducacionComponent,
     NeweducacionComponent,
-    EditEducacionComponent,
      ],
   imports: [
     FormsModule,
