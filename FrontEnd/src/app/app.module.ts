@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +20,8 @@ import { LoginComponent } from './components/login/login.component';
 import { interceptorProvider } from './service/interceptor-service';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
+import { NeweducacionComponent } from './components/educacion/neweducacion/neweducacion.component';
+import { EditEducacionComponent } from './components/educacion/edit-educacion/edit-educacion.component';
 ;
 
 
@@ -40,6 +41,8 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
     LoginComponent,
     NewExperienciaComponent,
     EditExperienciaComponent,
+    NeweducacionComponent,
+    EditEducacionComponent,
      ],
   imports: [
     FormsModule,
