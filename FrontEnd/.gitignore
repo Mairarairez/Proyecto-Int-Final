@@ -89,3 +89,4 @@ testem.log
 .DS_Store
 Thumbs.db
 
+.angular/cache/15.1.2/angular-webpack/623469b71f10ca1349c644e5e862348f7ab371c6/0.pack
