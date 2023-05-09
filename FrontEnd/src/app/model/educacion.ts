@@ -5,7 +5,7 @@ export class Educacion {
 
 
     constructor(nombreE: string, descripcionE: string){
-        this.nombreE = this.descripcionE;
+        this.nombreE = nombreE;
         this.descripcionE = descripcionE;
     }
 }

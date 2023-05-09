@@ -9,7 +9,7 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./educacion.component.css']
 })
 export class EducacionComponent implements OnInit {
-  Educacion: Educacion[] = [];
+  educacion: Educacion[] = [];
 
   constructor(private educacionS: EducacionService, private tokenService: TokenService) { }
   isLogged = false;
@@ -26,7 +26,7 @@ export class EducacionComponent implements OnInit {
   cargarEducacion(): void{
     this.educacionS.lista().subscribe(
       data =>{
-        this.Educacion = data;
+        this.educacion = data;
       }
     )
   }
