@@ -61,7 +61,7 @@ public class PersonaController {
     
     @GetMapping("/traer/perfil/{id}")
     public Persona findPersona(@PathVariable Integer id) {
-    return ipersonaService.findPersona(id);
+    return ipersonaService.findPersona(7);
 }
    
 }

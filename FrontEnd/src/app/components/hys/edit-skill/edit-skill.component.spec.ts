@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HysComponent } from './hys.component';
+import { EditSkillComponent } from './edit-skill.component';
 
-describe('HysComponent', () => {
-  let component: HysComponent;
-  let fixture: ComponentFixture<HysComponent>;
+describe('EditSkillComponent', () => {
+  let component: EditSkillComponent;
+  let fixture: ComponentFixture<EditSkillComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HysComponent ]
+      declarations: [ EditSkillComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(HysComponent);
+    fixture = TestBed.createComponent(EditSkillComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

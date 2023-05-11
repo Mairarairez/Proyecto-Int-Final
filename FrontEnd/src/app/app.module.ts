@@ -22,6 +22,8 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { EditeducacionComponent } from './components/educacion/editeducacion/editeducacion.component';
 import { NeweducacionComponent } from './components/educacion/neweducacion/neweducacion.component';
+import { EditSkillComponent } from './components/hys/edit-skill/edit-skill.component';
+import { NewSkillComponent } from './components/hys/new-skill/new-skill.component';
 ;
 
 
@@ -43,6 +45,8 @@ import { NeweducacionComponent } from './components/educacion/neweducacion/newed
     EducacionComponent,
     EditeducacionComponent,
     NeweducacionComponent,
+    EditSkillComponent,
+    NewSkillComponent,
      ],
   imports: [
     FormsModule,
