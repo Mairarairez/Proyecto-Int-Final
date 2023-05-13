@@ -29,4 +29,7 @@ export class NewSkillComponent implements OnInit {
       }
     )
   }
+  volver(){
+    this.router.navigate(['/'])
+  }
 }

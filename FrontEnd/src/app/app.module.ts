@@ -10,7 +10,6 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HysComponent } from './components/hys/hys.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
-import { DeslizarComponent } from './components/deslizar/deslizar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import {HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
@@ -24,6 +23,8 @@ import { EditeducacionComponent } from './components/educacion/editeducacion/edi
 import { NeweducacionComponent } from './components/educacion/neweducacion/neweducacion.component';
 import { EditSkillComponent } from './components/hys/edit-skill/edit-skill.component';
 import { NewSkillComponent } from './components/hys/new-skill/new-skill.component';
+import { EditProComponent } from './components/proyecto/edit-pro/edit-pro.component';
+import { NewProComponent } from './components/proyecto/new-pro/new-pro.component';
 ;
 
 
@@ -36,7 +37,6 @@ import { NewSkillComponent } from './components/hys/new-skill/new-skill.componen
     ExperienciaComponent,
     HysComponent,
     ProyectoComponent,
-    DeslizarComponent,
     FooterComponent,
     HomeComponent,
     LoginComponent,
@@ -47,6 +47,9 @@ import { NewSkillComponent } from './components/hys/new-skill/new-skill.componen
     NeweducacionComponent,
     EditSkillComponent,
     NewSkillComponent,
+    EditProComponent,
+    NewProComponent,
+    
      ],
   imports: [
     FormsModule,

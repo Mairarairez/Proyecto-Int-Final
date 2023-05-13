@@ -1,69 +1,46 @@
-    <div id="Proyectos">
-        <div class="container" id="proyectos">
-            <h1>Proyectos realizados</h1>        
-        </div>
+<div class="container">
+    <h1>Proyectos Realizados</h1>
+    <div>
+      <button type="button" routerLink="/newProject" class="btn btn-outline-dark" *ngIf="isLogged">Nuevo Proyecto</button>
+    </div>
+    <table class="table">
+      <tr *ngFor="let project of project">
+        <td>
+          <h2>{{ project.nameProject }}</h2>
+        </td>
+        <td>
+          <p>{{ project.descriptionProject }}</p>
+        </td>
+        <td>
 
-        <div class="col-sm-12 col-md-7 col-lg-7 parte1">
-          <div class="container" id="proyectos">
-            <div class="botones">
-              <div class="btn-edit" onclick="cambiar_parrafo7()">
-                  <a href="#" class="btn-right">
-                  <i class="bi bi-pencil-square"></i>
-                  </a>
+          <div class="btn btn-outline-primary container">
+              <div>
+                <h4>{{ project.nameProject }}</h4>
+                <p>{{ project.descriptionProject }}</p>
               </div>
-              <button type="button" class="btn">
-                  <i class="bi bi-x-square"></i>
-              </button>
-            </div>
-          <h2>Proyecto 1</h2>
-            <h3 class="container">Calculadora</h3>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore ratione rem sequi recusandae, alias possimus, id officiis reprehenderit quae, perspiciatis totam hic cum voluptas assumenda. Amet ducimus aspernatur soluta!</p>
-          </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
-           <img src="../../../assets/calculadora.jpg" class="img-fluid img-proyecto">
-        </div>
-       </div>
-
-        <div class="col-sm-12 col-md-7 col-lg-7 parte1">
-          <div class="container" id="proyectos">
-            <div class="botones">
-              <div class="btn-edit" onclick="cambiar_parrafo8()">
-                  <a href="#" class="btn-right">
-                  <i class="bi bi-pencil-square"></i>
-                  </a>
+              <div>
+                <a href="{{ project.linkProject }}" target="_blank">
+                  <img src="{{ project.imgProject }}" alt="Imagen del proyecto" id="icon-github" [hspace]="5">
+                </a>
               </div>
-              <button type="button" class="btn">
-                  <i class="bi bi-x-square"></i>
-              </button>
-            </div>
-          <h2>Proyecto 2</h2>
-            <h3 class="container">Calculadora</h3>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore ratione rem sequi recusandae, alias possimus, id officiis reprehenderit quae, perspiciatis totam hic cum voluptas assumenda. Amet ducimus aspernatur soluta!</p>
-          </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
-           <img src="../../../assets/calculadora.jpg" class="img-fluid img-proyecto">
-        </div>
-     </div>
 
-        <div class="col-sm-12 col-md-7 col-lg-7 parte1">
-          <div class="container" id="proyectos">
-            <div class="botones">
-              <div class="btn-edit" onclick="cambiar_parrafo9()">
-                  <a href="#" class="btn-right">
-                  <i class="bi bi-pencil-square"></i>
-                  </a>
+                <div>
+                <td *ngIf="isLogged">
+                  <button class="btn btn-light separado" routerLink="/editProject/{{ project.id }}">
+                    <i class="bi bi-pencil-fill"></i></button> <br>
+                </td>
+                <td *ngIf="isLogged"><br>
+                  <button class="btn btn-dark separado" (click)="onDeletePro(project.id)">
+                    <i class="bi bi-trash-fill"></i></button>
+                </td>
               </div>
-              <button type="button" class="btn">
-                  <i class="bi bi-x-square"></i>
-              </button>
-            </div>
-          <h2>Proyecto 3</h2>
-            <h3 class="container">Calculadora</h3>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore ratione rem sequi recusandae, alias possimus, id officiis reprehenderit quae, perspiciatis totam hic cum voluptas assumenda. Amet ducimus aspernatur soluta!</p>
+              <div class="project-button" *ngIf="(window.innerWidth <= 767)">
+                <h4>{{ project.nameProject }}</h4>
+                <p>{{ project.descriptionProject }}</p>
+              </div>
+              
           </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
-           <img src="../../../assets/calculadora.jpg" class="img-fluid img-proyecto">
-        </div>
-       </div>
-</div>
-
+      </tr>
+    </table>
+  </div>
+  

@@ -48,9 +48,3 @@ p{
     color: #EFF4F2;
 
 }
-.bi-pencil-square::before {
-    color: black;
-    font-size: 20px;
-    position: absolute;
-    left: 20px;
-}

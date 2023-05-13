@@ -29,5 +29,8 @@ export class NewExperienciaComponent implements OnInit {
       }
     )
   }
+  volver(){
+    this.router.navigate(['/'])
+  }
 
 }

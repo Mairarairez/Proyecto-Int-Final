@@ -1,16 +1,35 @@
-
 *{
-    font-family: 'Quicksand', sans-serif;
-    box-sizing: border-box;
- }
- .row{
-        max-width: 1400px;
-        margin: auto;
-        background-color: #EFF4F2;
-        padding: 0;  
-        text-align: center;
-    }
-div .circulo{
-    width: 10px;
-    height: 10px;;
+  font-family: 'Quicksand', sans-serif;
+  box-sizing: border-box;
 }
+.circle-progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .circle-progress-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .circle-progress-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .circle-progress-actions {
+    margin-top: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .circle-progress-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

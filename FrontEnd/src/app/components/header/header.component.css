@@ -62,3 +62,8 @@ nav{
   }
 
 }
+ 
+.btn-outline-dark:hover{
+    box-shadow: 15px 15px 40px rgb(65, 65, 65);
+    transition: 0.5s;
+}

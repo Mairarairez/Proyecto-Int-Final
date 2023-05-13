@@ -30,5 +30,8 @@ export class NeweducacionComponent implements OnInit {
       }
     )
   }
+  volver(){
+    this.router.navigate(['/'])
+  }
 
 }

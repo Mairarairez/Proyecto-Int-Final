@@ -40,5 +40,8 @@ export class EditExperienciaComponent implements OnInit {
       }
     )
   }
+  volver(){
+    this.router.navigate(['/'])
+  }
 
 }

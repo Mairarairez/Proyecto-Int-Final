@@ -39,4 +39,7 @@ export class EditSkillComponent implements OnInit {
       }
     )
   }
+  volver(){
+    this.router.navigate(['/'])
+  }
 }

@@ -6,6 +6,10 @@ import { NewExperienciaComponent } from './components/experiencia/new-experienci
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
 import { NeweducacionComponent } from './components/educacion/neweducacion/neweducacion.component';
 import { EditeducacionComponent } from './components/educacion/editeducacion/editeducacion.component';
+import { NewSkillComponent } from './components/hys/new-skill/new-skill.component';
+import { EditSkillComponent } from './components/hys/edit-skill/edit-skill.component';
+import { NewProComponent } from './components/proyecto/new-pro/new-pro.component';
+import { EditProComponent } from './components/proyecto/edit-pro/edit-pro.component';
 
 const routes: Routes = [
   {
@@ -14,7 +18,11 @@ const routes: Routes = [
     {path: 'nuevaexp', component: NewExperienciaComponent},
     {path: 'editexp/:id', component: EditExperienciaComponent},
     {path: 'nuevaedu', component: NeweducacionComponent},
-    {path: 'editedu/:id', component: EditeducacionComponent}
+    {path: 'editedu/:id', component: EditeducacionComponent},
+    {path: 'newskill', component: NewSkillComponent},
+    {path: 'editskill/:id', component: EditSkillComponent},
+    {path:'newProject', component: NewProComponent},
+   {path:'editProject/:id', component: EditProComponent}
    // {path: '', redirectTo: 'login', pathMatch: 'full'}
 ];
 

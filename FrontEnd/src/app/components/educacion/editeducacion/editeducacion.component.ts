@@ -40,4 +40,7 @@ export class EditeducacionComponent implements OnInit {
       }
     )
   }
+  volver(){
+    this.router.navigate(['/'])
+  }
 }
