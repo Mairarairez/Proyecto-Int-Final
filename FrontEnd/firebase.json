@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/proyecto-integrador-maira-ramirez",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

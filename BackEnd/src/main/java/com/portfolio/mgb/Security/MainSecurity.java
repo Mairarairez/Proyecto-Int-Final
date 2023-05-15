@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://porfolio-mairaramirez.onrender.com/")
 public class MainSecurity {
     
     @Autowired
