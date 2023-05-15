@@ -69,14 +69,9 @@ public class AuthController {
         Usuario usuario = new Usuario(nuevoUsuario.getNombre(), nuevoUsuario.getNombreUsuario(),
                 nuevoUsuario.getEmail(), passwordEncoder.encode(nuevoUsuario.getPassword()));
 
-
         List<Rol> roles = new ArrayList<>();
         Optional<Rol> rol = rolService.getByRolNombre(RolNombre.ROLE_USER);
-        if (!rol.isPresent()) {
-            // manejar el caso cuando no se encuentra el rol
-        } else {
-            roles.add(rol.get());
-        }
+        rol.ifPresent(roles::add);
 
         Optional<Rol> adminRole = rolService.getByRolNombre(RolNombre.ROLE_ADMIN);
         if (nuevoUsuario.getRoles().contains("admin") && adminRole.isPresent()) {
