@@ -14,10 +14,8 @@ import com.portfolio.mgb.Security.Enums.RolNombre;
 import com.portfolio.mgb.Security.Service.RolService;
 import com.portfolio.mgb.Security.Service.UsuarioService;
 import com.portfolio.mgb.Security.jwt.JwtProvider;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
-import java.util.Optional;
+import java.util.Set;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -66,22 +64,19 @@ public class AuthController {
             return new ResponseEntity(new Mensaje("Ese email ya existe"), HttpStatus.BAD_REQUEST);
         }
 
+          
         Usuario usuario = new Usuario(nuevoUsuario.getNombre(), nuevoUsuario.getNombreUsuario(),
-                nuevoUsuario.getEmail(), passwordEncoder.encode(nuevoUsuario.getPassword()));
-
-        List<Rol> roles = new ArrayList<>();
-        Optional<Rol> rol = rolService.getByRolNombre(RolNombre.ROLE_USER);
-        rol.ifPresent(roles::add);
-
-        Optional<Rol> adminRole = rolService.getByRolNombre(RolNombre.ROLE_ADMIN);
-        if (nuevoUsuario.getRoles().contains("admin") && adminRole.isPresent()) {
-            roles.add(adminRole.get());
-        }
-
-        usuario.setRoles(new HashSet<>(roles));
+            nuevoUsuario.getEmail(), passwordEncoder.encode(nuevoUsuario.getPassword()));
+        
+        Set<Rol> roles = new HashSet<>();
+        roles.add(rolService.getByRolNombre(RolNombre.ROLE_USER).get());
+        
+        if(nuevoUsuario.getRoles().contains("admin"))
+            roles.add(rolService.getByRolNombre(RolNombre.ROLE_ADMIN).get());
+        usuario.setRoles(roles);
         usuarioService.save(usuario);
-
-        return new ResponseEntity(new Mensaje("Usuario guardado"), HttpStatus.CREATED);
+        
+        return new ResponseEntity(new Mensaje("Usuario guardado"),HttpStatus.CREATED);
     }
 
     @PostMapping("/login")
